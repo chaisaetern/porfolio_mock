@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Print Clearly";
+    src: url("../fonts/print_clearly/PrintClearly.otf");
+}
+
+@font-face {
+    font-family: "BIOHAZARD";
+    src: url("../fonts/BIOWEAPON/BIOWEAPON/BIOWEAPON.ttf");
+}
+
+body, html {
+    font-family: "BIOHAZARD", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #f00;
+}
+
+li {
+    list-style: none;
+    margin: 0.7rem;
+    padding: 0;
+}
+
+.header- nav {
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
