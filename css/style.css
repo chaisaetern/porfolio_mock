@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "reey";
+    src: url("../fonts/reey/Reey-Regular.otf");
+}
+
+.hero > h2 {
+    font-family: "reey";
+}
