@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Print Clearly Bold";
+    src: url("../fonts/print_clearly/PrintBold.otf");
+}
+
+@font-face {
     font-family: "BIOHAZARD";
     src: url("../fonts/BIOWEAPON/BIOWEAPON/BIOWEAPON.ttf");
 }
@@ -23,6 +28,20 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+h5, h6 {
+    font-family: "BIOHAZARD";
+}
+
+h6 {
+    /* font-size: 1rem; */
+}
+
+p {
+    line-height: 1rem;
+    margin: 2px;
+    padding: 2px;
 }
 
 a {
@@ -62,10 +81,10 @@ li {
 /* Body */
 .body-container {
     width: 80%;
-    height: 75vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .hero {
@@ -77,4 +96,47 @@ li {
     text-align: center;
     font-family: "reey", sans-serif;
     margin: 1.5rem;
+}
+
+.hero > p {
+    text-align: center;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-about {
+    width: 33%;
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.profile-img-container {
+    width: 33%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img-container > img {
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.profile-details {
+    width: 33%;
+    margin: 1rem;
+    padding: 1rem;
 }
