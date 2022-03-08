@@ -8,6 +8,11 @@
     src: url("../fonts/BIOWEAPON/BIOWEAPON/BIOWEAPON.ttf");
 }
 
+@font-face {
+    font-family: "reey";
+    src: url("../fonts/reey/Reey-Regular.otf");
+}
+
 body, html {
     font-family: "Print Clearly", sans-serif;
     margin: 0;
@@ -15,6 +20,9 @@ body, html {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 a {
@@ -48,4 +56,24 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Body */
+.body-container {
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.hero {
+    display: inherit;
+    flex-direction: column;
+}
+
+.hero > h2 {
+    text-align: center;
+    font-family: "reey", sans-serif;
 }
