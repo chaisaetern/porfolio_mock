@@ -76,4 +76,5 @@ li {
 .hero > h2 {
     text-align: center;
     font-family: "reey", sans-serif;
+    margin: 1.5rem;
 }
