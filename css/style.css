@@ -172,7 +172,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    margin: 1rem 0;
 }
 
 .profile-details > h5 {
@@ -184,7 +184,7 @@ li {
 
 /* Slide grid */
 .project-container {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
