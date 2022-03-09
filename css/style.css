@@ -165,8 +165,6 @@ li {
 
 .profile-img-container:hover > img {
     border-radius: 0;
-    border-top: 5px double #307eae;
-    border-bottom: 5px double #307eae;
 }
 
 .profile-details {
