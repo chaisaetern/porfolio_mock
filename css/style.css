@@ -28,6 +28,7 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
 }
 
 h5, h6 {
@@ -57,6 +58,8 @@ li {
     padding: 0;
 }
 
+
+/* Header/Navigation */
 .header-nav {
     width: 100%;
     height: 3rem;
@@ -78,14 +81,16 @@ li {
 /* Body */
 .body-container {
     width: 80%;
-    height: 65vh;
+    /* height: auto; */
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    /* border: 1px solid black; */
+    align-items: center;
 }
 
 .hero {
-    display: inherit;
+    display: flex;
     flex-direction: column;
     padding: 2rem;
 }
@@ -139,4 +144,21 @@ li {
     width: 2rem;
     margin: 1rem 0.5rem;
     padding: 0;
+}
+
+
+/* Slide grid */
+.project-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container > img,
+.project-container > div {
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem;
 }
