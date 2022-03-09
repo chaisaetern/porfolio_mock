@@ -32,6 +32,7 @@ body, html {
 
 h5, h6 {
     font-family: "BIOHAZARD";
+    margin-bottom: 1.2rem;
 }
 
 p {
@@ -104,29 +105,23 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .profile-about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
     margin: 1rem;
     padding: 1rem;
 }
 
-.profile-about {
+.profile-about > p {
     max-width: 16rem;
+    line-height: 1.2rem;
 }
 
 .profile-img-container {
     margin: 1rem;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .profile-img-container > img {
@@ -138,4 +133,10 @@ li {
 .profile-details {
     margin: 1rem;
     padding: 1rem;
+}
+
+.profile-socials a > img {
+    width: 2rem;
+    margin: 1rem 0.5rem;
+    padding: 0;
 }
