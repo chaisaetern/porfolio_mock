@@ -4,3 +4,5 @@ Needed Implements:
 
 ~ Add a NAV bar
 ~ Create a 2nd page (gamer themed)
+
+~ Animate header text to transition in intervals
