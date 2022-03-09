@@ -1,5 +1,3 @@
-Implements:
+Needed Implements:
 
-~ Box grid of 3x3 or 4x4 to showcase work
-~ Light/Dark Mode
-~ 
+~ JS for rotating pictures on slides using setTimeout() on 5s intervals/[random 3-5s?]
