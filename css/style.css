@@ -31,7 +31,7 @@ body, html {
     height: auto;
 }
 
-h5, h6 {
+h1, h5, h6 {
     font-family: "BIOHAZARD";
     margin-bottom: 1.2rem;
 }
@@ -161,4 +161,16 @@ li {
     width: 18rem;
     height: 18rem;
     margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container div > h1 {
+    line-height: 3rem;
+    text-align: center;
+}
+
+.project-container div > .left {
+    text-align: left;
 }
