@@ -134,6 +134,7 @@ li {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
+    margin: 1rem 0;
 }
 
 .profile-about {
@@ -156,11 +157,6 @@ li {
     line-height: 1.3rem;
 }
 
-.profile-img-container {
-    margin: 1rem;
-    padding: 1rem;
-}
-
 .profile-img-container > img {
     height: 18rem;
     border-radius: 50%;
@@ -171,6 +167,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .profile-details > h5 {
