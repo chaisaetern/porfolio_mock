@@ -166,6 +166,10 @@ li {
     align-items: center;
 }
 
+.project-container > .middle-child {
+    height: 12rem;
+}
+
 .project-container div > h1 {
     line-height: 3rem;
     text-align: center;
