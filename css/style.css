@@ -161,11 +161,12 @@ li {
     height: 18rem;
     border-radius: 50%;
     transition: 1s;
-    overflow: hidden;
 }
 
 .profile-img-container:hover > img {
     border-radius: 0;
+    border-top: 5px double #307eae;
+    border-bottom: 5px double #307eae;
 }
 
 .profile-details {
