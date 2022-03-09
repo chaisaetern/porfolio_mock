@@ -22,7 +22,11 @@ body, html {
     font-family: "Print Clearly", sans-serif;
     margin: 0;
     padding: 0;
+    /* Change for Dark Mode */
+    /* background-color: #444; */
+    /* color: #fff; */
     background-color: #fff;
+    color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +54,8 @@ p {
 
 a {
     text-decoration: none;
+    /* Change to Dark Mode */
+    /* color: #fff; */
     color: #000;
     transition: 0.5s;
 }
@@ -76,7 +82,6 @@ li {
 .header-nav {
     width: 100%;
     height: 3rem;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +150,8 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Switch to Dark Mode */
+    /* border: 1px solid #fff; */
     border: 1px solid #000;
 }
 
@@ -208,6 +215,7 @@ li {
     justify-content: center;
     align-items: center;
 }
+/* Add white borders for slides 2,3 & 6 for Dark Mode */
 
 .project-container div > h1 {
     line-height: 3rem;
