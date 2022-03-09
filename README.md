@@ -3,4 +3,4 @@
 # WP-Apprenticeship
 # Bitwise Industries/Alpha Works
 
-# LINK : https://chaisaetern.github.io/porfolio_mock/
+# LINK : https://chaisaetern.github.io/portfolio_mock/
