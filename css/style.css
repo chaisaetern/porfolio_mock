@@ -22,9 +22,6 @@ body, html {
     font-family: "Print Clearly", sans-serif;
     margin: 0;
     padding: 0;
-    /* Change for Dark Mode */
-    /* background-color: #444; */
-    /* color: #fff; */
     background-color: #fff;
     color: #000;
     display: flex;
@@ -54,8 +51,6 @@ p {
 
 a {
     text-decoration: none;
-    /* Change to Dark Mode */
-    /* color: #fff; */
     color: #000;
     transition: 0.5s;
 }
@@ -179,23 +174,6 @@ li {
     font-size: 1.2rem;
 }
 
-.profile-socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-socials > a {
-    margin: 0 0.5rem;
-}
-
-.profile-socials a > img {
-    width: 2rem;
-    padding: 0;
-    display: flex;
-}
-
 
 /* Slide grid */
 .project-container {
@@ -217,7 +195,6 @@ li {
     transition: 0.5s;
     overflow: hidden;
 }
-/* Add white borders for slides 2,3 & 6 for Dark Mode */
 
 .project-container > div > img {
     width: 100%;
@@ -240,4 +217,40 @@ li {
 
 .project-container div > .left {
     text-align: left;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer > .socials > a {
+    margin: 0 0.5rem;
+}
+
+.footer > .socials > a > img {
+    width: 2rem;
+    padding: 0;
+    display: flex;
 }
