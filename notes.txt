@@ -1,3 +1,6 @@
 Needed Implements:
 
 ~ JS for rotating pictures on slides using setTimeout() on 5s intervals/[random 3-5s?]
+
+~ Add a NAV bar
+~ Create a 2nd page (gamer themed)
