@@ -133,13 +133,12 @@ li {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .profile-about {
     width: 70%;
-    margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -150,6 +149,7 @@ li {
 
 .profile-about > h5 {
     margin-top: 0;
+    padding-top: 0.5rem;
 }
 
 .profile-about > p {
@@ -167,8 +167,6 @@ li {
 }
 
 .profile-details {
-    margin: 1rem;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,6 +199,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .project-container > img,
