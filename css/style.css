@@ -160,6 +160,12 @@ li {
 .profile-img-container > img {
     height: 18rem;
     border-radius: 50%;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.profile-img-container:hover > img {
+    border-radius: 0;
 }
 
 .profile-details {
@@ -199,7 +205,7 @@ li {
 .project-container > div > img {
     width: 100%;
     height: 20rem;
-    transition: transform 1s, filter .5s ease-out;
+    transition: 1s;
 }
 
 .project-container > div:hover > img {
