@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Print Clearly";
+    src: url("../fonts/print_clearly/PrintClearly.otf");
+}
+
+@font-face {
+    font-family: "Print Clearly Bold";
+    src: url("../fonts/print_clearly/PrintBold.otf");
+}
+
+@font-face {
+    font-family: "BIOHAZARD";
+    src: url("../fonts/BIOWEAPON/BIOWEAPON/BIOWEAPON.ttf");
+}
+
+@font-face {
+    font-family: "reey";
+    src: url("../fonts/reey/Reey-Regular.otf");
+}
+
+body, html {
+    font-family: "Print Clearly", sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Change for Dark Mode */
+    /* background-color: #444; */
+    /* color: #fff; */
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+body {
+    width: 85vw;
+}
+
+h1, h5, h6 {
+    font-family: "BIOHAZARD";
+    margin-bottom: 1.2rem;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1rem;
+    margin: 2px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    /* Change to Dark Mode */
+    /* color: #fff; */
+    color: #000;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+li {
+    list-style: none;
+    margin: 0.7rem;
+    padding: 0;
+}
+
+
+/* Header/Navigation */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-nav {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "BIOHAZARD", sans-serif;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+
+/* Body */
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    padding: 2rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero > h2 {
+    text-align: center;
+    font-family: "reey", sans-serif;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 2rem;
+    margin: 1.5rem;
+    display: flex;
+}
+
+.hero > h2 > img {
+    width: 2.5rem;
+}
+
+.hero > p {
+    text-align: center;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.profile-about {
+    width: 70%;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid #000;
+}
+
+.profile-about > h5 {
+    margin-top: 0;
+    padding-top: 0.5rem;
+}
+
+.profile-about > p {
+    line-height: 1.3rem;
+}
+
+.profile-img-container > img {
+    height: 18rem;
+    border-radius: 50%;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.profile-details > h5 {
+    font-size: 1.2rem;
+}
+
+.profile-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-socials > a {
+    margin: 0 0.5rem;
+}
+
+.profile-socials a > img {
+    width: 2rem;
+    padding: 0;
+    display: flex;
+}
+
+
+/* Slide grid */
+.project-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.project-container > div {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+/* Add white borders for slides 2,3 & 6 for Dark Mode */
+
+.project-container > div > img {
+    width: 100%;
+    height: 20rem;
+    transition: transform 1s, filter .5s ease-out;
+}
+
+.project-container > div:hover > img {
+    transform: scale(1.5);
+}
+
+.project-container > div:nth-child(4) > img {
+    transform: none;
+}
+
+.project-container div > h1 {
+    line-height: 3rem;
+    text-align: center;
+}
+
+.project-container div > .left {
+    text-align: left;
+}

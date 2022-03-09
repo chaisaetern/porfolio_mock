@@ -1,0 +1,5 @@
+Implements:
+
+~ Box grid of 3x3 or 4x4 to showcase work
+~ Light/Dark Mode
+~ 
