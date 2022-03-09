@@ -131,6 +131,7 @@ li {
 
 .profile-img-container > img {
     height: 15rem;
+    width: auto;
     border-radius: 50%;
 }
 
