@@ -90,7 +90,6 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65vw;
     padding: 2rem;
 }
 
@@ -130,6 +129,7 @@ li {
 
 .profile-about {
     width: 70%;
+    max-width: 85rem;
     padding: 1.5rem;
     text-align: center;
     display: flex;
@@ -177,6 +177,7 @@ li {
 /* Slide grid */
 .project-container {
     width: 100%;
+    max-width: 85rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -227,7 +228,10 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    color: #fff;
+    width: 100%;
+    height: 25vh;
+    background-color: #000;
 }
 
 .footer > div {
