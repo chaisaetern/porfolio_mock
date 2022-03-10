@@ -83,14 +83,56 @@ li {
     color: #307eae;
 }
 
+.fade-in-1 {
+    position: relative;
+    overflow: hidden;
+    animation: slide-down 5s;
+}
+
+.fade-in-2 {
+    animation: fade-in 10s;
+}
+
+.fade-in-3 {
+    position: relative;
+    animation: slide-right 5s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        top: -25rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        left: -50rem;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 /* Body */
 .body-container {
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65vw;
     padding: 2rem;
 }
 
@@ -130,6 +172,7 @@ li {
 
 .profile-about {
     width: 70%;
+    max-width: 85rem;
     padding: 1.5rem;
     text-align: center;
     display: flex;
@@ -177,6 +220,7 @@ li {
 /* Slide grid */
 .project-container {
     width: 100%;
+    max-width: 85rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -227,7 +271,10 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    color: #fff;
+    width: 100%;
+    height: 25vh;
+    background-color: #000;
 }
 
 .footer > div {
