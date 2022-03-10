@@ -109,9 +109,11 @@ li {
 
 @keyframes slide-down {
     0% {
-        top: -10rem;
+        /* opacity: 0; */
+        top: -20rem;
     }
     100% {
+        /* opacity: 1; */
         top: 0;
     }
 }
