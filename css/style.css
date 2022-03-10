@@ -83,51 +83,11 @@ li {
     color: #307eae;
 }
 
-.fade-in-1 {
-    position: relative;
-    overflow: hidden;
-    animation: slide-down 3s;
+.pulse {
+    opacity: 0;
+    margin-left: 2.5rem;
 }
 
-.fade-in-2 {
-    animation: fade-in 10s;
-}
-
-.fade-in-3 {
-    position: relative;
-    animation: slide-right 3s;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slide-down {
-    0% {
-        /* opacity: 0; */
-        top: -20rem;
-    }
-    100% {
-        /* opacity: 1; */
-        top: 0;
-    }
-}
-
-@keyframes slide-right {
-    0% {
-        opacity: 0;
-        left: -80rem;
-    }
-    100% {
-        opacity: 1;
-        left: 0;
-    }
-}
 
 /* Body */
 .body-container {
@@ -254,7 +214,7 @@ li {
     opacity: 0.5;
 }
 
-.project-container > div:nth-child(4) > img {
+.project-container > div:nth-child(5) > img {
     transform: none;
 }
 
@@ -304,4 +264,79 @@ li {
     width: 2rem;
     padding: 0;
     display: flex;
+}
+
+
+
+/* Animations */
+@keyframes slide-down {
+    0% {
+        top: -20rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        left: -80rem;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+        animation: fade-in 3s 1;
+    }
+    .square-animation-2 {
+        animation: fade-in 6s 1;
+    }
+    .slide-down-animation {
+        position: relative;
+        animation: slide-down 3s 1;
+    }
+    .pulse-animation {
+        animation: pulse 2s linear infinite;
+        animation-delay: 2s;
+    }
+    .slide-right-animation {
+        position: relative;
+        animation: slide-right 3s 1;
+    }
 }
