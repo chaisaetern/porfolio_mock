@@ -86,7 +86,7 @@ li {
 .fade-in-1 {
     position: relative;
     overflow: hidden;
-    animation: slide-down 5s;
+    animation: slide-down 3s;
 }
 
 .fade-in-2 {
@@ -95,7 +95,7 @@ li {
 
 .fade-in-3 {
     position: relative;
-    animation: slide-right 5s;
+    animation: slide-right 3s;
 }
 
 @keyframes fade-in {
@@ -109,18 +109,22 @@ li {
 
 @keyframes slide-down {
     0% {
-        top: -25rem;
+        /* opacity: 0; */
+        top: -20rem;
     }
     100% {
+        /* opacity: 1; */
         top: 0;
     }
 }
 
 @keyframes slide-right {
     0% {
-        left: -50rem;
+        opacity: 0;
+        left: -80rem;
     }
     100% {
+        opacity: 1;
         left: 0;
     }
 }
