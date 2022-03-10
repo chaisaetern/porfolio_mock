@@ -339,7 +339,7 @@ li {
         animation: fade-in 3s 1;
     }
     .square-animation-2 {
-        animation: wipe-enter 1s 3;
+        animation: wipe-enter 1s 1;
     }
     .slide-down-animation {
         position: relative;
