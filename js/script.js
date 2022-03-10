@@ -5,19 +5,19 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const slideDown = entry.target.querySelector(".slide-down");
-        const fadeIn = entry.target.querySelector(".fade-in");
+        const pulse = entry.target.querySelector(".pulse");
         const slideRight = entry.target.querySelector(".slide-right");
   
         if (entry.isIntersecting) {
             slideDown.classList.add("slide-down-animation");
-            fadeIn.classList.add("fade-in-animation");
+            pulse.classList.add("pulse-animation");
             slideRight.classList.add("slide-right-animation");
             return; // if we added the class, exit the function
         }
   
       // We're not intersecting, so remove the class!
         slideDown.classList.remove("slide-down-animation");
-        fadeIn.classList.remove("fade-in-animation");
+        pulse.classList.remove("pulse-animation");
         slideRight.classList.remove("slide-right-animation");
     });
 });
