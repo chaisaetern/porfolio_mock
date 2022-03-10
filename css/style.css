@@ -305,3 +305,20 @@ li {
     padding: 0;
     display: flex;
 }
+
+
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+        animation: wipe-enter 1s 1;
+    }
+}
