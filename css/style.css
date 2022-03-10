@@ -83,16 +83,9 @@ li {
     color: #307eae;
 }
 
-.slide-down-animation {
-    animation: slide-down 3s;
-}
-
-.fade-in {
-    animation: fade-in 10s;
-}
-
-.slide-right-animation {
-    animation: slide-right 3s;
+.pulse {
+    opacity: 0;
+    margin-left: 2.5rem;
 }
 
 
@@ -221,7 +214,7 @@ li {
     opacity: 0.5;
 }
 
-.project-container > div:nth-child(4) > img {
+.project-container > div:nth-child(5) > img {
     transform: none;
 }
 
@@ -278,11 +271,9 @@ li {
 /* Animations */
 @keyframes slide-down {
     0% {
-        /* opacity: 0; */
         top: -20rem;
     }
     100% {
-        /* opacity: 1; */
         top: 0;
     }
 }
@@ -296,12 +287,15 @@ li {
     }
 }
 
-@keyframes fade-in-2 {
+@keyframes pulse {
     0% {
         opacity: 0;
     }
-    100% {
+    50% {
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -325,28 +319,21 @@ li {
 	}
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 1;
-    }
-}
 
 @media (prefers-reduced-motion: no-preference) {
     .square-animation {
         animation: fade-in 3s 1;
     }
     .square-animation-2 {
-        animation: wipe-enter 1s 1;
+        animation: fade-in 6s 1;
     }
     .slide-down-animation {
         position: relative;
         animation: slide-down 3s 1;
     }
-    .fade-in-animation {
-        animation: fade-in-2 10s 1;
+    .pulse-animation {
+        animation: pulse 2s linear infinite;
+        animation-delay: 2s;
     }
     .slide-right-animation {
         position: relative;
