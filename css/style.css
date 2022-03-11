@@ -90,14 +90,21 @@ li {
 }
 
 .scroll-btn-container > img {
-    border: 2px solid #39c;
+    /* border: 2px solid #39c; */
+    width: 3rem;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
+    box-shadow: 0 0 10px 15px #fff;
+    margin-top: 1rem;
+    position: absolute;
+    background-color: rgba(255,255,255,1);
 }
 
 .scroll-btn-container > img:hover {
     transform: rotate(90deg);
+    /* border: 3px solid #39c; */
+    box-shadow: 0 0 3px 12px #fff;
 }
 
 .pulse {
@@ -246,7 +253,7 @@ li {
 }
 
 .project-container > div:nth-child(5) > img {
-    transform: scale(1.5);
+    transform: scale(1.5); 
 }
 
 .project-container > div:hover:nth-child(5) > img {
@@ -254,7 +261,12 @@ li {
 }
 
 .project-container > div:last-child > img {
-    transform: none;
+    /* transform: rotate3d(-1, -1, 0, 0); */
+    transition: 1.5s;
+}
+
+.project-container > div:last-child:hover img {
+    transform: rotate3d(-1, 1, 0, 180deg);
 }
 
 .project-container div > h1 {
