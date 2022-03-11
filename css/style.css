@@ -209,21 +209,36 @@ li {
     transition: 1s;
 }
 
-.project-container > div:hover > img {
-    transform: scale(1.5);
+.project-container > div:nth-child(2) {
+    border-radius: 50%;
 }
 
 .project-container > div:hover:nth-child(2) > img {
-    transform: rotate(45deg);
+    transform: rotate(90deg) scale(1.5);
+    filter: brightness(50%);
+}
+
+.project-container > div:nth-child(3) > img {
+    filter: blur(3px);
+}
+
+.project-container > div:hover:nth-child(3) > img {
+    transform: scale(1.5);
+    filter: blur(0);
 }
 
 .project-container > div:hover:nth-child(4) > img {
     transform: rotate(-45deg);
     border-radius: 50%;
+    filter: brightness(65%);
+}
+
+.project-container > div:nth-child(5) > img {
+    transform: scale(1.5);
 }
 
 .project-container > div:hover:nth-child(5) > img {
-    transform: scale(0.9);
+    transform: scale(1);
 }
 
 .project-container > div:last-child > img {
