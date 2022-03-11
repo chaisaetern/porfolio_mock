@@ -228,8 +228,8 @@ li {
 }
 
 .project-container > div:hover:nth-child(4) > img {
-    transform: rotate(-45deg);
-    border-radius: 50%;
+    transform: rotate(-20deg);
+    border-radius: 30%;
     filter: brightness(65%);
 }
 
