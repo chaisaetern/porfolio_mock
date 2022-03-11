@@ -26,6 +26,24 @@ observer.observe(document.querySelector(".header-text"));
 
 
 
+// Rotating button animation
+// When user scrolls into view animation
+const observerBtn = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const rotatingBtn = entry.target.querySelector(".rotating-btn");
+  
+        if (entry.isIntersecting) {
+            rotatingBtn.classList.add("rotating-btn-animation");
+            return; // if we added the class, exit the function
+        }
+  
+      // We're not intersecting, so remove the class!
+        rotatingBtn.classList.remove("rotating-btn-animation");
+    });
+});
+
+observerBtn.observe(document.querySelector(".rotating-btn-wrapper"));
+
 
 
 // Slides animation
