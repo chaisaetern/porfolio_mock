@@ -83,11 +83,27 @@ li {
     color: #307eae;
 }
 
+.scroll-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-btn-container > img {
+    border: 2px solid #39c;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.scroll-btn-container > img:hover {
+    transform: rotate(90deg);
+}
+
 .pulse {
     opacity: 0;
     margin-left: 2.5rem;
 }
-
 
 /* Body */
 .body-container {
@@ -333,17 +349,20 @@ li {
     }
 }
 
-@keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
+@keyframes rotate-btn {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(720deg);
+    } 
 }
 
 
 @media (prefers-reduced-motion: no-preference) {
+    .rotating-btn-animation {
+        animation: rotate-btn 3s;
+    }
     .square-animation {
         animation: fade-in 3s;
     }
