@@ -225,10 +225,6 @@ li {
     transition: 1s;
 }
 
-.project-container > div:nth-child(2) {
-    border-radius: 50%;
-}
-
 .project-container > div:hover:nth-child(2) > img {
     transform: rotate(90deg) scale(1.5);
     filter: brightness(50%);
