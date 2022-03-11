@@ -1,3 +1,8 @@
+// onClick for play_btn to scroll body-container into view
+const bodyContainer = document.querySelector(".body-container");
+
+// smooth scroll to element and align it at the top
+const btnScroller = () => bodyContainer.scrollIntoView({ behavior: 'smooth', block: 'start'});
 
 
 // Header animation
