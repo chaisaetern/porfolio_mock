@@ -72,7 +72,7 @@ li {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background-color: #000;
     color: #fff;
     margin: 0;
@@ -214,7 +214,7 @@ li {
 }
 
 .project-container > div:hover:nth-child(2) > img {
-    transform: scale3d(2,1,1);
+    transform: rotate(45deg);
 }
 
 .project-container > div:hover:nth-child(4) > img {
@@ -223,7 +223,7 @@ li {
 }
 
 .project-container > div:hover:nth-child(5) > img {
-    transform: rotateY(-180deg);
+    transform: scale(0.9);
 }
 
 .project-container > div:last-child > img {
@@ -233,10 +233,6 @@ li {
 .project-container div > h1 {
     text-align: center;
     line-height: 3.2rem;
-}
-
-.project-container div > .left {
-    text-align: left;
 }
 
 
