@@ -95,7 +95,8 @@ li {
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
-    box-shadow: 0 0 10px 15px #fff;
+    /* box-shadow: 0 0 8px 12px #fff; */
+    box-shadow: 0 0 3px 12px #fff;
     margin-top: 1rem;
     position: absolute;
     background-color: rgba(255,255,255,1);
@@ -224,6 +225,22 @@ li {
     align-items: center;
     transition: 0.5s;
     overflow: hidden;
+}
+
+.project-container > div:nth-child(5) > span {
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    opacity: 0;
+    font-size: bolder;
+    color: #fff;
+    text-shadow: 3px 5px 5px black;
+    font-family: "reey", sans-serif;
+}
+
+.project-container > div:nth-child(5):hover > span {
+    font-size: 2rem;
+    opacity: 1;
 }
 
 .project-container > div > img {
