@@ -232,7 +232,8 @@ li {
     z-index: 1;
     transition: 1s;
     opacity: 0;
-    font-size: bolder;
+    font-weight: 300;
+    font-size: 1.4rem;
     color: #fff;
     text-shadow: 3px 5px 5px black;
     font-family: "reey", sans-serif;
@@ -240,6 +241,7 @@ li {
 
 .project-container > div:nth-child(5):hover > span {
     font-size: 2rem;
+    font-weight: 900;
     opacity: 1;
 }
 
@@ -275,6 +277,7 @@ li {
 
 .project-container > div:hover:nth-child(5) > img {
     transform: scale(1);
+    filter: blur(1px);
 }
 
 .project-container > div:last-child > img {
