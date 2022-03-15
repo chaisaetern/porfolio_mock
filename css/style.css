@@ -186,9 +186,9 @@ li {
 }
 
 .profile-img-container:hover > img {
-    /* border-radius: 0; */
+    border-radius: 0;
     filter: brightness(85%);
-    transform: rotateY(180deg);
+    box-shadow: 10px 10px 5px rgba(0,0,0,1);
 }
 
 .profile-details {
@@ -297,6 +297,15 @@ li {
     transition: 1s;
 }
 
+.project-container > .project-title > h1 {
+    text-shadow: none;
+    transition: 1s;
+}
+
+.project-container > .project-title:hover > h1 {
+    text-shadow: 0px -45px 5px rgba(0,0,0,0.5);
+}
+
 .project-container > div:hover:nth-child(2) > img {
     transform: rotate(90deg) scale(1.5);
     filter: brightness(50%);
@@ -324,15 +333,6 @@ li {
 .project-container > div:hover:nth-child(5) > img {
     transform: scale(1);
     filter: blur(1px);
-}
-
-.project-container > div:last-child > img {
-    /* transform: rotate3d(-1, -1, 0, 0); */
-    transition: 1.5s;
-}
-
-.project-container > div:last-child:hover img {
-    transform: rotate3d(-1, 1, 0, 180deg);
 }
 
 .project-container div > h1 {
