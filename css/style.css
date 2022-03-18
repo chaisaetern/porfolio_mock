@@ -343,7 +343,6 @@ li {
 }
 
 .view-more-btn {
-    /* margin-bottom: 5rem; */
     width: 15rem;
     height: 4rem;
     display: flex;
@@ -352,15 +351,17 @@ li {
     cursor: pointer;
     background-color: #fff;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     font-family: "reey", cursive;
     border: 2px solid #307eae;
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.5s !important;
 }
 
 .view-more-btn:hover {
-    background-color: rgb(212, 212, 212);
+    /* background-color: rgb(212, 212, 212); */
+    border: 2px solid #000;
+    color: #307eae;
 }
 
 
