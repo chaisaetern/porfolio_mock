@@ -51,20 +51,27 @@ observerBtn.observe(document.querySelector(".rotating-btn-wrapper"));
 
 
 
-// Slides animation
-// When user scrolls into view animation
-const observer2 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        const square = entry.target.querySelector(".square");
-  
-        if (entry.isIntersecting) {
-            square.classList.add("square-animation");
-            return; // if we added the class, exit the function
-        }
-  
-      // We're not intersecting, so remove the class!
-        square.classList.remove("square-animation");
-    });
-});
 
-observer2.observe(document.querySelector(".square-wrapper"));
+// ====================
+// Animation reveals elements from the DOM on scroll
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+    
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("revealed");
+        } else {
+            reveals[i].classList.remove("revealed");
+        }
+
+    }
+
+}

@@ -121,6 +121,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 3rem;
 }
 
 .hero {
@@ -214,7 +215,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin: 2rem 0;
 }
 
 .project-container > div {
@@ -377,6 +378,19 @@ li {
     width: 2rem;
     padding: 0;
     display: flex;
+}
+
+/* JS animation on scroll classes */
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.revealed {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
