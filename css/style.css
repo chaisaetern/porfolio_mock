@@ -90,12 +90,10 @@ li {
 }
 
 .scroll-btn-container > img {
-    /* border: 2px solid #39c; */
     width: 3rem;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
-    /* box-shadow: 0 0 8px 12px #fff; */
     box-shadow: 0 0 3px 12px #fff;
     margin-top: 1rem;
     position: absolute;
@@ -104,7 +102,6 @@ li {
 
 .scroll-btn-container > img:hover {
     transform: rotate(90deg);
-    /* border: 3px solid #39c; */
     box-shadow: 0 0 3px 12px #fff;
 }
 
@@ -359,7 +356,6 @@ li {
 }
 
 .view-more-btn:hover {
-    /* background-color: rgb(212, 212, 212); */
     border: 2px solid #000;
     color: #307eae;
 }
@@ -401,6 +397,16 @@ li {
     width: 2rem;
     padding: 0;
     display: flex;
+}
+
+.footer > .visited > p {
+    color: #fff;
+}
+
+.website-counter {
+    color: #307eae;
+    /* font-weight: bold; */
+    font-family: "Kaushan Script", cursive;
 }
 
 /* JS animation on scroll classes */
@@ -469,7 +475,7 @@ li {
     } 
 }
 
-
+/* Header/Landing page animations on screen view */
 @media (prefers-reduced-motion: no-preference) {
     .rotating-btn-animation {
         animation: rotate-btn 3s;
